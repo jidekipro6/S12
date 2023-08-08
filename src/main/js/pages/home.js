@@ -1,5 +1,5 @@
-
 const React = require('react');
+const client = require('../client');
 
 class App extends React.Component {
 	constructor(props) {
@@ -19,7 +19,7 @@ class App extends React.Component {
 		return (
 			<>
                 <h1>Demo App!</h1>
-				<Titulo entidad="Instrumentos"  emoji="🎸🎹" />
+				<Titulo entidad="Instrumentos" emoji="🎸🎹" />
 				<InstrumentoList instrumentos={this.state.instrumentos}/>
 				 <Titulo entidad="Musicos" emoji="🎵🎼" />
 				<MusicoList musicos={this.state.musicos}/>
@@ -40,16 +40,7 @@ const Titulo = (props)=> {
 	
 	}
 	
-	const TituloMusicos = ()=> {
-		return (
-		<>
-		 <hr />
-		 <h2>Musicos</h2>
-		 <span>Listado completo de Musicos</span>
-		 <hr />
-		 </>);
-		
-		}
+	 
 
 class InstrumentoList extends React.Component{
 	render() {
@@ -110,4 +101,4 @@ class Musico extends React.Component{
 	}
 }
 
-module.exports=App;
+module.exports = App;

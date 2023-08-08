@@ -1,6 +1,6 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
- const App=require('./pages/home');
+const App=require('./pages/home');
 
  
 
